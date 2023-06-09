@@ -22,7 +22,6 @@ bezier_visualizer := class(creative_device):
     @editable
     Handle2:creative_prop = creative_prop{}
 
-    # globals
     MyDD:debug_draw = debug_draw{}
 
     OnBegin<override>()<suspends>:void=
@@ -63,5 +62,3 @@ bezier_visualizer := class(creative_device):
 
             Pos := vector3{X:=dX, Y:=dY, Z:=dZ}
             Result := MyDD.DrawSphere(Pos, ?Radius:=2.0, ?Duration:=10.0)
-
-

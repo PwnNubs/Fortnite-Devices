@@ -29,6 +29,8 @@ bezier_visualizer := class(creative_device):
         MyDD.ShowChannel()
 
     OnButtonInteractedWith(InPlayer:agent):void=
+        MyDD.Clear()    # in case of spamming button
+
         SPvec := StartPosition.GetTransform().Translation
         EPvec := EndPosition.GetTransform().Translation
         H1vec := Handle1.GetTransform().Translation
